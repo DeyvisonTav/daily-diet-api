@@ -9,7 +9,14 @@ interface UserProps {
 }
 
 export class User extends Entity<UserProps> {
+  get name(): string {
+    return this.props.name;
+  }
   
+  get password(): string {
+    return this.props.password;
+  }
+
   get email(): string {
     return this.props.email;
   }
